@@ -1,0 +1,15 @@
+<ivysettings>
+    <settings defaultResolver="chain-resolver"/>
+    <resolvers>
+        <chain name="chain-resolver" returnFirst="true">
+            <ibiblio name="central" m2compatible="true" root="https://maven.aliyun.com/repository/public"/>
+            <ibiblio name="spring" m2compatible="true" root="https://maven.aliyun.com/repository/spring"/>
+            <ibiblio name="google" m2compatible="true" root="https://maven.aliyun.com/repository/google"/>
+            <ibiblio name="gradle-plugin" m2compatible="true" root="https://maven.aliyun.com/repository/gradle-plugin"/>
+            <ibiblio name="jcenter" m2compatible="true" root="https://maven.aliyun.com/repository/jcenter"/>
+            <ibiblio name="apache" m2compatible="true" root="https://maven.aliyun.com/repository/apache-snapshots"/>
+            <!-- 如果阿里云镜像找不到，回退到官方仓库 -->
+            <ibiblio name="maven-central" m2compatible="true"/>
+        </chain>
+    </resolvers>
+</ivysettings> 
